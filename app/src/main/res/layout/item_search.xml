@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="10dp">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/tv_title_item_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="节目名"
+        android:textSize="12sp"/>
+
+    <ImageButton
+        android:id="@+id/tv_tag_item_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标记"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/renqi"
+        android:visibility="gone"/>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_media_item_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="节目类型"
+       android:layout_alignParentRight="true"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>

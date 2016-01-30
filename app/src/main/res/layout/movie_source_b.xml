@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_grid_feb"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_test"/>
+    <include layout="@layout/tab_item_more" />
+
+    <com.atguigu.yingyin12.view.MyGridView
+        android:id="@+id/gl_source_content"
+        android:layout_width="match_parent"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="3"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view_tag"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

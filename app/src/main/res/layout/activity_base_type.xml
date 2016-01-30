@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/ll_base"
+    >
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:background="#3097fd">-->
+    <!--<ImageButton-->
+    <!--android:id="@+id/ib_back"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ly_ic_title_back"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:visibility="gone"/>-->
+    <!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_toRightOf="@id/ib_back"-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@android:color/darker_gray"-->
+    <!--android:layout_margin="12dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_type"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="电影"-->
+    <!--android:layout_toRightOf="@id/view"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="20sp"-->
+    <!--android:visibility="gone"/>-->
+    <!--<ImageButton-->
+    <!--android:id="@+id/ib_search"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_search"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:visibility="gone"/>-->
+    <!--<ImageButton-->
+    <!--android:id="@+id/ib_filter"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_tit_filter"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="12dp"-->
+    <!--android:layout_toLeftOf="@id/ib_search"-->
+    <!--android:visibility="gone"/>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_base"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

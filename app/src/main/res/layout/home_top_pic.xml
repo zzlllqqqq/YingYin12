@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_home_top_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_grid_item_icon" />
+
+        <ImageView
+            android:id="@+id/iv_home_top_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_home_top_pic"
+            android:layout_alignTop="@+id/iv_home_top_pic"
+            android:src="@drawable/ic_tag_dianying"
+            android:visibility="gone" />
+
+
+
+</RelativeLayout>

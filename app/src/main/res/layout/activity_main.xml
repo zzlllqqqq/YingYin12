@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <com.atguigu.yingyin12.view.MainViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="#aaaaaa"/>
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/rb_home_selector"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/rb_channel"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/rb_channel_selector"
+            android:text="频道" />
+        <RadioButton
+            android:id="@+id/rb_download"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/rb_download_selector"
+            android:text="离线" />
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/rb_me_selector"
+            android:text="我" />
+    </RadioGroup>
+</LinearLayout>
+

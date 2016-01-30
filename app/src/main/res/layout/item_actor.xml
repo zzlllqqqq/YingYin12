@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_actor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.atguigu.yingyin12.view.CircleImageView
+            android:id="@+id/iv_actor1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/actor_circle_default_img"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_actor1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="范冰冰"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.atguigu.yingyin12.view.CircleImageView
+            android:id="@+id/iv_actor2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/actor_circle_default_img" />
+
+        <TextView
+            android:id="@+id/tv_actor2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="范冰冰"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.atguigu.yingyin12.view.CircleImageView
+            android:id="@+id/iv_actor3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/actor_circle_default_img" />
+
+        <TextView
+            android:id="@+id/tv_actor3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="范冰冰"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.atguigu.yingyin12.view.CircleImageView
+            android:id="@+id/iv_actor4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/actor_circle_default_img" />
+
+        <TextView
+            android:id="@+id/tv_actor4_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="范冰冰"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

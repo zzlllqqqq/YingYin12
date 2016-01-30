@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_controler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/letv_play_controller_top_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_back_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_center_arrow_left"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+               <Button
+                   android:id="@+id/btn_video_select"
+                   android:layout_width="40dp"
+                   android:layout_height="30dp"
+                   android:layout_marginRight="10dp"
+                   android:text="超清"
+                   android:gravity="center"
+                   android:layout_centerInParent="true"
+                   android:background="@drawable/card_item_selected_bg_border"
+                   />
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/letv_play_controller_top_bg"
+        >
+        <SeekBar
+            android:id="@+id/sb_video_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="6dp"
+            android:minHeight="6dp"
+            android:progress="30"
+            android:progressDrawable="@drawable/sb_custom"
+            android:thumb="@drawable/progress_thumb"
+            />
+        <ImageButton
+            android:id="@+id/ib_play_pause"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_player_pause"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sb_video_bar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="3dp"/>
+        <ImageButton
+            android:id="@+id/ib_play_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_player_next"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sb_video_bar"
+            android:layout_toRightOf="@id/ib_play_pause"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sb_video_bar"
+            android:layout_toRightOf="@id/ib_play_next"
+            android:layout_marginLeft="15dp"
+            android:text="20:23:4/22:44:6"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/ib_play_screen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_player_full"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sb_video_bar"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

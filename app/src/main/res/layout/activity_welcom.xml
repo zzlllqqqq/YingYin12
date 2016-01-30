@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/launchdefault"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView android:id="@+id/tv_launch_detail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="8dp"
+              android:gravity="center"
+              android:text="一直在模仿" />
+
+    <ImageView
+        android:id="@+id/iv_launch_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_launch_detail"
+        android:src="@drawable/laucher_bottom_logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="v4.4"
+        android:layout_toRightOf="@id/iv_launch_icon"
+        android:layout_above="@id/tv_launch_detail"/>
+
+
+</RelativeLayout>

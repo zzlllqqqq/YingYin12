@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/tab_item_details_short" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.atguigu.yingshi2345.view.CircleImageView
+            android:id="@+id/iv_details_custom_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_app_recom_default" />
+
+        <TextView
+            android:id="@+id/tv_details_custom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_details_custom_icon"
+            android:text="qqyonghyohog" />
+
+        <TextView
+            android:id="@+id/tv_details_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_details_custom_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_details_custom_icon"
+            android:text="qqyonghyohog" />
+
+        <TextView
+            android:id="@+id/tv_details_short_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_details_short"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_details_custom_icon"
+            android:text="qqyonghyohog"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_details_short_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_details_short_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="回复(0)"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_details_reply_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detail_comment_reply"
+            android:layout_toLeftOf="@id/tv_details_short_reply"
+            android:layout_alignBottom="@id/tv_details_short_time"
+            android:layout_marginBottom="5dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_details_short_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="查看40条评论"
+        android:textSize="12sp" />
+</LinearLayout>

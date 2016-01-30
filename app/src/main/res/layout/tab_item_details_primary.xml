@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_box"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@id/iv"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="主演"
+        android:textColor="#99000000"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_item_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:drawableRight="@drawable/vd_jq_more"
+        android:text="更多"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_blue_light" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"
+        android:layout_below="@id/tv_item_more"/>
+
+</RelativeLayout>

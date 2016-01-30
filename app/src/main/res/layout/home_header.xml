@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/vp_home_header"
+            android:background="#55000000">
+            <ImageView
+                android:id="@+id/iv_play_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/center_collect_play"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_tab_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:text="天涯"
+                android:layout_toRightOf="@+id/iv_play_icon"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_tab_detail_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home_movie"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/ic_channel_dianying"
+            android:text="电影"
+            android:textColor="@android:color/darker_gray"/>
+        <RadioButton
+            android:id="@+id/rb_home_teleplay"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/ic_channel_dianshi"
+            android:text="电视剧"
+            android:textColor="@android:color/darker_gray"/>
+        <RadioButton
+            android:id="@+id/rb_home_variety"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/ic_channel_zongyi"
+            android:text="综艺"
+            android:textColor="@android:color/darker_gray"/>
+        <RadioButton
+            android:id="@+id/rb_home_anime"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/ic_channel_dongman"
+            android:text="动漫"
+            android:textColor="@android:color/darker_gray"/>
+        <RadioButton
+            android:id="@+id/rb_home_zhibo"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/ic_channel_zhibo"
+            android:text="直播"
+            android:textColor="@android:color/darker_gray"/>
+    </RadioGroup>
+
+</LinearLayout>

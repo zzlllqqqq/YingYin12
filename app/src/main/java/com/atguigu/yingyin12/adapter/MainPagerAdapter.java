@@ -1,0 +1,49 @@
+package com.atguigu.yingyin12.adapter;
+
+import android.content.Context;
+import android.support.v4.view.PagerAdapter;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.atguigu.yingyin12.base.BasePager;
+
+import java.util.ArrayList;
+
+/**
+ * Created by admin on 2016/1/30.
+ */
+public class MainPagerAdapter extends PagerAdapter {
+
+    private final Context context;
+    private final ArrayList<BasePager> pagers;
+
+    public MainPagerAdapter(Context context, ArrayList<BasePager> pagers) {
+        this.context = context;
+        this.pagers = pagers;
+    }
+
+    @Override
+    public int getCount() {
+        return pagers.size();
+    }
+
+    @Override
+    public boolean isViewFromObject(View view, Object object) {
+        return view == object;
+    }
+
+    @Override
+    public View instantiateItem(ViewGroup container, int position) {
+        BasePager basePager = pagers.get(position);
+        View rootView = basePager.rootView;
+        container.addView(rootView);
+        return rootView;
+
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        container.removeView((View) object);
+    }
+
+}

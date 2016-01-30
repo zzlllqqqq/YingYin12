@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_top_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll_movie_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/movie_tablayout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/holo_blue_light"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@android:color/holo_blue_light"
+            app:tabTextColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/ib_movie_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vd_jq_more" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_test"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_movie"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <include layout="@layout/loading_resource"
+        />
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#3097fd">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_home_topbanner_logo" />
+
+
+
+    <ImageButton
+        android:id="@+id/ib_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_home_topbanner_record" />
+    <ImageButton
+        android:id="@+id/ib_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"
+        android:layout_toLeftOf="@id/ib_record"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_home_topbanner_game" />
+
+    <TextView
+        android:id="@+id/tv_home_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="15dp"
+        android:text="全网搜索"
+        android:gravity="center"
+        android:background="@drawable/ic_home_topbanner_search"
+        android:textColor="@drawable/tv_tool_select"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
+
